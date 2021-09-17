@@ -1,8 +1,10 @@
-﻿using Shaijus.EFBusiness;
+﻿using MySql.Data.EntityFramework;
+using Shaijus.EFBusiness;
 using System.Data.Entity;
 
 namespace Shaijus.EFDAL
 {
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class ShaijusContext:DbContext
     {
         public DbSet<Box> Boxes { get; set; }
