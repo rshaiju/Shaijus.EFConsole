@@ -1,15 +1,21 @@
 ﻿namespace Shaijus.EFDAL.Migrations
 {
-    using System;
-    using System.Data.Entity;
+    using MySql.Data.EntityFramework;
+    using System.Configuration;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     public sealed class Configuration : DbMigrationsConfiguration<Shaijus.EFDAL.ShaijusContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            
+            switch (ConfigurationManager.ConnectionStrings["ShaijusContext"]?.ProviderName)
+            {
+                case "MySql.Data.MySqlClient":
+                    SetSqlGenerator("MySql.Data.MySqlClient", new MySqlMigrationSqlGenerator());
+                    break;
+            }
         }
 
         protected override void Seed(Shaijus.EFDAL.ShaijusContext context)
