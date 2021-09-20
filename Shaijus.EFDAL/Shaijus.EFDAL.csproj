@@ -109,6 +109,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ShaijusContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShaijusMySqlContext.cs" />
+    <Compile Include="ShaijusSqlServerContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
