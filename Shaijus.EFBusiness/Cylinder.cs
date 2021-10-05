@@ -13,5 +13,7 @@ namespace Shaijus.EFBusiness
         public int Radius { get; set; }
 
         public int Height { get; set; }
+
+        public string Description { get; set; }
     }
 }
