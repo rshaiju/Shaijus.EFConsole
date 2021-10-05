@@ -15,5 +15,7 @@ namespace Shaijus.EFBusiness
         public int Height { get; set; }
 
         public string Description { get; set; }
+
+        public DateTime CreationTime { get; set; }
     }
 }
