@@ -14,6 +14,6 @@ namespace Shaijus.EFBusiness
 
         public string Description { get; set; }
 
-        public DateTime CreationTime { get; set; }
+        //public DateTime CreationTime { get; set; }
     }
 }
