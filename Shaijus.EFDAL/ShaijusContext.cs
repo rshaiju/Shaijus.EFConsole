@@ -13,6 +13,7 @@ namespace Shaijus.EFDAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer(new CheckAndMigrateDatabaseToLatestVersion());
+            modelBuilder.Properties<string>().Configure(x => { x.HasColumnType("nvarchar"); x.IsUnicode(true); });
             base.OnModelCreating(modelBuilder);
         }
     }

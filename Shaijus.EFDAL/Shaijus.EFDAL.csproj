@@ -106,6 +106,10 @@
     <Compile Include="Migrations\202109171620115_Added_Cylinder.designer.cs">
       <DependentUpon>202109171620115_Added_Cylinder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110060011137_added-string-column.cs" />
+    <Compile Include="Migrations\202110060011137_added-string-column.designer.cs">
+      <DependentUpon>202110060011137_added-string-column.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ShaijusContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109171620115_Added_Cylinder.resx">
       <DependentUpon>202109171620115_Added_Cylinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110060011137_added-string-column.resx">
+      <DependentUpon>202110060011137_added-string-column.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
