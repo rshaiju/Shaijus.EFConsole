@@ -7,13 +7,13 @@ namespace Shaijus.EFDAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class addedstringcolumn : IMigrationMetadata
+    public sealed partial class addedcity : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedstringcolumn));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addedcity));
         
         string IMigrationMetadata.Id
         {
-            get { return "202110060011137_added-string-column"; }
+            get { return "202110212246501_added-city"; }
         }
         
         string IMigrationMetadata.Source

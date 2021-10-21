@@ -13,7 +13,7 @@ namespace Shaijus.EFDAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202109171241498_Initial"; }
+            get { return "202110212232472_Initial"; }
         }
         
         string IMigrationMetadata.Source

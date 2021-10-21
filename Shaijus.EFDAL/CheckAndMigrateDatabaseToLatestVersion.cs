@@ -12,9 +12,9 @@ namespace Shaijus.EFDAL
         public override void InitializeDatabase(ShaijusContext context)
         {
             var migrator = new DbMigrator(new Configuration());
-            _pendingMigrations = migrator.GetPendingMigrations().Any();
+            //_pendingMigrations = migrator.GetPendingMigrations().Any();
 
-            if (_pendingMigrations)
+            //if (_pendingMigrations)
             {
                 base.InitializeDatabase(context);
             }

@@ -98,17 +98,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckAndMigrateDatabaseToLatestVersion.cs" />
-    <Compile Include="Migrations\202109171241498_Initial.cs" />
-    <Compile Include="Migrations\202109171241498_Initial.designer.cs">
-      <DependentUpon>202109171241498_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202110212232472_Initial.cs" />
+    <Compile Include="Migrations\202110212232472_Initial.designer.cs">
+      <DependentUpon>202110212232472_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109171620115_Added_Cylinder.cs" />
-    <Compile Include="Migrations\202109171620115_Added_Cylinder.designer.cs">
-      <DependentUpon>202109171620115_Added_Cylinder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202110060011137_added-string-column.cs" />
-    <Compile Include="Migrations\202110060011137_added-string-column.designer.cs">
-      <DependentUpon>202110060011137_added-string-column.cs</DependentUpon>
+    <Compile Include="Migrations\202110212246501_added-city.cs" />
+    <Compile Include="Migrations\202110212246501_added-city.designer.cs">
+      <DependentUpon>202110212246501_added-city.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ShaijusContext.cs" />
@@ -125,14 +121,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109171241498_Initial.resx">
-      <DependentUpon>202109171241498_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110212232472_Initial.resx">
+      <DependentUpon>202110212232472_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109171620115_Added_Cylinder.resx">
-      <DependentUpon>202109171620115_Added_Cylinder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202110060011137_added-string-column.resx">
-      <DependentUpon>202110060011137_added-string-column.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110212246501_added-city.resx">
+      <DependentUpon>202110212246501_added-city.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
