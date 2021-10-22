@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 namespace Shaijus.EFBusiness
 {
-    public class Teacher
+    public class Teacher : EntityBase
     {
-        public int Id { get; set; }
-
         public string Name { get; set; }
 
-        public int TeachesInId { get; set; }
+        public long TeachesInId { get; set; }
 
         [ForeignKey("TeachesInId")]
         public StudyClass TeachesIn { get; set; }
 
-        public int GraduatedFromCollegeId { get; set; }
+        public long GraduatedFromCollegeId { get; set; }
 
         [ForeignKey("GraduatedFromCollegeId")]
         public College GraduatedFrom { get; set; }

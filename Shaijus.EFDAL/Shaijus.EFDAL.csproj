@@ -98,13 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckAndMigrateDatabaseToLatestVersion.cs" />
-    <Compile Include="Migrations\202110212232472_Initial.cs" />
-    <Compile Include="Migrations\202110212232472_Initial.designer.cs">
-      <DependentUpon>202110212232472_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202110212246501_added-city.cs" />
-    <Compile Include="Migrations\202110212246501_added-city.designer.cs">
-      <DependentUpon>202110212246501_added-city.cs</DependentUpon>
+    <Compile Include="Migrations\202110220203075_initial.cs" />
+    <Compile Include="Migrations\202110220203075_initial.designer.cs">
+      <DependentUpon>202110220203075_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ShaijusContext.cs" />
@@ -121,11 +117,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110212232472_Initial.resx">
-      <DependentUpon>202110212232472_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202110212246501_added-city.resx">
-      <DependentUpon>202110212246501_added-city.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110220203075_initial.resx">
+      <DependentUpon>202110220203075_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

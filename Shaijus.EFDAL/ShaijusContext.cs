@@ -19,7 +19,7 @@ namespace Shaijus.EFDAL
 
         public ShaijusContext()
         {
-            Database.Log = Console.WriteLine;
+            //Database.Log = Console.WriteLine;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

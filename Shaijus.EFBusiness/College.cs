@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace Shaijus.EFBusiness
 {
-    public class College
+    public class College : EntityBase
     {
-        public int Id { get; set; }
-
         public string Name { get; set; }
 
-        public int CityId { get; set; }
+        public long CityId { get; set; }
 
         [ForeignKey("CityId")]
         public City LocatedInCity { get; set; }

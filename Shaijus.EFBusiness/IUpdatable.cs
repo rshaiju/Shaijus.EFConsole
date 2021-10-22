@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Shaijus.EFBusiness
 {
-    public class City: EntityBase
+    public interface IUpdatable
     {
-        public string Name { get; set; }
+        DateTime? LastModifiedDate { get; set; }
 
+        string LastModifiedBy { get; set; }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shaijus.EFBusiness
 {
-    public class City: EntityBase
+    public interface ICreatable
     {
-        public string Name { get; set; }
-
+        DateTime CreatedDate { get; set; }
+        string CreatedBy { get; set; }
     }
 }

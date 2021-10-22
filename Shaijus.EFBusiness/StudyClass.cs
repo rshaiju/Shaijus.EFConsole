@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Shaijus.EFBusiness
 {
-    public  class StudyClass
+    public  class StudyClass : EntityBase
     {
-        public int Id { get; set; }
-
         public string Name { get; set; }
 
         public IList<Teacher> Teachers { get; set; }

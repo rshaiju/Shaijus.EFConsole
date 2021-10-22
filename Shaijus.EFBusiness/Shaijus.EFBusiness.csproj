@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="City.cs" />
     <Compile Include="College.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="ICreatable.cs" />
+    <Compile Include="IUpdatable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudyClass.cs" />
