@@ -40,6 +40,9 @@
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework.DynamicFilters, Version=3.2.2.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.DynamicFilters.3.2.2\lib\net40\EntityFramework.DynamicFilters.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
@@ -98,9 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckAndMigrateDatabaseToLatestVersion.cs" />
-    <Compile Include="Migrations\202110220203075_initial.cs" />
-    <Compile Include="Migrations\202110220203075_initial.designer.cs">
-      <DependentUpon>202110220203075_initial.cs</DependentUpon>
+    <Compile Include="Migrations\202111080605072_Initial.cs" />
+    <Compile Include="Migrations\202111080605072_Initial.designer.cs">
+      <DependentUpon>202111080605072_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ShaijusContext.cs" />
@@ -117,8 +120,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110220203075_initial.resx">
-      <DependentUpon>202110220203075_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111080605072_Initial.resx">
+      <DependentUpon>202111080605072_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

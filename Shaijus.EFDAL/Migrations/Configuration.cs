@@ -32,6 +32,7 @@
             context.SaveChanges();
 
             var college = new College { Name = "Victoria" };
+            college.IsActive = true;
             college.CityId = context.Cities.Where(c => c.Name == "Palakkad").FirstOrDefault().Id;
             context.Colleges.AddOrUpdate(x => x.Name, college);
             context.SaveChanges();

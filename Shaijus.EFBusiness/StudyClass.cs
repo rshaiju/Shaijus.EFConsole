@@ -13,5 +13,6 @@ namespace Shaijus.EFBusiness
         public IList<Teacher> Teachers { get; set; }
 
         public IList<Student> Students { get; set; }
+
     }
 }

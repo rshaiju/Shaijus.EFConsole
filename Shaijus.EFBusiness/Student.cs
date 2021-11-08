@@ -15,6 +15,5 @@ namespace Shaijus.EFBusiness
 
         [ForeignKey("StudyClassId")]
         public StudyClass StudiesIn { get; set; }
-
     }
 }

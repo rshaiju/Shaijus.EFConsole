@@ -15,5 +15,7 @@ namespace Shaijus.EFBusiness
 
         [ForeignKey("CityId")]
         public City LocatedInCity { get; set; }
+
+        public bool IsActive { get; set; }
     }
 }

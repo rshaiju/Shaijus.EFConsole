@@ -1,4 +1,5 @@
-﻿using Shaijus.EFBusiness;
+﻿using EntityFramework.DynamicFilters;
+using Shaijus.EFBusiness;
 using System;
 using System.Data.Entity;
 
@@ -19,13 +20,14 @@ namespace Shaijus.EFDAL
 
         public ShaijusContext()
         {
-            //Database.Log = Console.WriteLine;
+            Database.Log = Console.WriteLine;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer(new CheckAndMigrateDatabaseToLatestVersion());
             modelBuilder.Properties<string>().Configure(x => { x.HasColumnType("nvarchar"); x.IsUnicode(true); });
+            modelBuilder.Filter("ActiveCollege", (College college) => college.IsActive);
 
             base.OnModelCreating(modelBuilder);
         }

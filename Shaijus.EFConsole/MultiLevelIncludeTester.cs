@@ -18,10 +18,11 @@ namespace Shaijus.EFConsole
                     .Include(s => s.StudiesIn)
                     .Include(s => s.StudiesIn.Teachers)
                     .Include(s => s.StudiesIn.Teachers.Select(t => t.GraduatedFrom))
-                    .Include(s => s.StudiesIn.Teachers.Select(t => t.GraduatedFrom.LocatedInCity))
+                    //.Include(s => s.StudiesIn.Teachers.Select(t => t.GraduatedFrom.LocatedInCity))
                     .FirstOrDefault();
 
-                Console.WriteLine(student.StudiesIn.Teachers.FirstOrDefault().GraduatedFrom.LocatedInCity.Name);
+
+                //Console.WriteLine(student.StudiesIn.Teachers.FirstOrDefault().GraduatedFrom.LocatedInCity.Name);
             }
         }
     }

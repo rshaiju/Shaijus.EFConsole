@@ -1,9 +1,11 @@
 ﻿namespace Shaijus.EFDAL.Migrations
 {
     using System;
+    using System.Collections.Generic;
+    using System.Data.Entity.Infrastructure.Annotations;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {
@@ -23,7 +25,12 @@
                         Id = c.Long(nullable: false, identity: true),
                         Name = c.String(maxLength: 1000, storeType: "nvarchar"),
                         CityId = c.Long(nullable: false),
-                    })
+                        IsActive = c.Boolean(nullable: false),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_College_ActiveCollege", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Cities", t => t.CityId, cascadeDelete: true)
                 .Index(t => t.CityId);
@@ -79,7 +86,11 @@
             DropTable("dbo.Teachers");
             DropTable("dbo.StudyClasses");
             DropTable("dbo.Students");
-            DropTable("dbo.Colleges");
+            DropTable("dbo.Colleges",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_College_ActiveCollege", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                });
             DropTable("dbo.Cities");
         }
     }
